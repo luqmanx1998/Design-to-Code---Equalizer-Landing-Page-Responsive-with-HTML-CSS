@@ -129,6 +129,7 @@ h1,h2,h3 {
 .main__pricing-card {
     padding: var(--mobile-spacing-md) var(--mobile-spacing-sm);
     background-color: var(--color-orange);
+    color: var(--color-white);
 }
 
 .pricing-card__header {
