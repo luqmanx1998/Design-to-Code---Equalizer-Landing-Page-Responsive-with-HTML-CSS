@@ -1,0 +1,379 @@
+/*---------------------CUSTOM STYLES-----------------*/
+
+:root {
+    --color-cyan: #66E2DC;
+    --color-orange: #FA7453;
+    --color-yellow: #FFB964;
+    --color-white: #FCFAF9;   
+    --color-slate: #191826;
+
+    --header-1-font-size: 8.8rem;
+    --header-2-font-size: 6.4rem;
+    --header-3-font-size: 4rem;
+    --p-font-size-1: 2rem;
+    --p-font-size-2: 1.6rem;
+    --p-font-size-3: 1.8rem;
+
+    --mobile-spacing-sm: 2rem;
+    --mobile-spacing-sm2: 4rem;
+    --mobile-spacing-md: 4.8rem;
+    --mobile-spacing-lrg: 6.4rem;
+    --mobile-spacing-xlg: 8rem;
+    --tablet-spacing-sm: 4rem;
+    --tablet-spacing-sm2: 4.8rem;
+    --tablet-spacing-md: 6.4rem;
+    --tablet-spacing-lrg: 8rem;
+    --tablet-spacing-xlg: 12.8rem;
+    --spacing-huge: 20rem;
+    --desktop-spacing-sm: 8rem;
+}
+
+/*----------------------------------------------------*/
+
+/*----------------------CSS RESET---------------------*/
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+/*-----------------------------------------------------*/
+
+/*--------------------GENERAL STYLES-------------------*/
+
+body {
+    font-size: 1.6rem;
+    line-height: 1.5;
+    letter-spacing: 0;
+    font-family: "IBM Plex Sans", sans-serif;
+    padding-bottom: 8rem;
+}
+
+h1,h2,h3,h4,h5 {
+    font-weight: 700;
+    line-height: 1;
+}
+
+h1 {
+    font-size: var(--header-1-font-size);
+    letter-spacing: -0.1rem;
+}
+
+h2 {
+    font-size: var(--header-2-font-size);
+}
+
+h3 {
+    font-size: var(--header-3-font-size);
+}
+
+h1,h2,h3 {
+    letter-spacing: -0.1rem;;
+}
+
+.hero {
+    background-image: url(starter-code/assets/bg-main-mobile.png);
+    background-position: 0% 85%;
+}
+
+.hero__container {
+    padding: var(--mobile-spacing-lrg) var(--mobile-spacing-sm);
+}
+
+.hero__logo {
+    margin-bottom: var(--mobile-spacing-lrg);
+}
+
+.hero__header {
+    margin-bottom: var(--mobile-spacing-sm2);
+}
+
+
+.main__container {
+    padding-top: 11rem;
+}
+
+.main__illustration {
+    background-color: var(--color-slate);
+    padding-bottom: var(--mobile-spacing-lrg);
+    text-align: center;
+    height: 38rem;
+    position: relative;
+    background-image: url(starter-code/assets/bg-pattern-2.svg);
+    background-size: 31.2rem 46.8rem;
+    background-position: 50% 5%;
+    background-repeat: no-repeat;
+}
+
+.main__illustration__img {
+    display: block;
+    height: 43rem;
+    position: absolute;
+    bottom: var(--mobile-spacing-lrg);
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main__illustration__img-tab {
+    display: none;
+}
+
+.main__pricing-card {
+    padding: var(--mobile-spacing-md) var(--mobile-spacing-sm);
+    background-color: var(--color-orange);
+}
+
+.pricing-card__header {
+    margin-bottom: 2.4rem;
+    font-weight: 700;
+}
+
+.pricing-card__text {
+    margin-bottom: var(--mobile-spacing-sm2);
+}
+
+.pricing-card__price {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--mobile-spacing-md);
+}
+
+.pricing-card__price span {
+    font-weight: 700;
+    font-size: var(--header-2-font-size);
+    margin-right: 1.6rem;
+    line-height: 1.1;
+}
+
+.pricing-card__price p {
+    font-size: var(--p-font-size-1);
+}
+
+.pricing-card__btns {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1.6rem 3.2rem;
+    border: none;
+    border-radius: 1.2rem;
+    gap: 0.8rem;
+    font-family: inherit;
+    font-weight: 700;
+    line-height: 1.8;
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+.pricing-card__btn-1 {
+    background-color: var(--color-slate);
+    color: var(--color-white);
+}
+
+.pricing-card__btn-2 {
+    background-color: var(--color-white);
+    color: var(--color-slate);
+    margin-bottom: 6.4rem;
+}
+
+footer {
+    padding: 6.4rem 2rem 0 2rem;
+}
+
+.footer__copyright,
+.footer__logo {
+    margin-bottom: 3.2rem;
+}
+
+.footer__copyright span {
+    font-weight: 700;
+}
+
+.footer__links {
+    display: flex;
+    gap: 3.2rem;
+}
+
+.footer__links img {
+    cursor: pointer;
+}
+
+/*------------RESPONSIVE STYLES------------*/
+
+@media only screen and (min-width: 48em) /* 768px */ {
+    
+    body {
+        background-image: url(starter-code/assets/bg-main-tablet.png);
+        background-position: 90% -15%;
+        background-repeat: no-repeat;
+    }   
+    
+    .hero {
+        background-image: url(starter-code/assets/bg-pattern-1.svg);
+        background-repeat: no-repeat;
+        background-position: 110% -4rem;
+        background-size: auto 40rem;
+    }
+
+    .hero__container {
+        padding-inline: 4rem;
+    }
+
+    .hero__logo {
+        margin-bottom: var(--tablet-spacing-xlg);
+    }
+
+    .hero__header {
+        font-size: var(--header-2-font-size);
+        max-width: 41.6rem;
+    }
+
+    .hero__text {
+        font-size: var(--p-font-size-3);
+        max-width: 50.4rem;
+    }
+
+    .main__illustration {
+        display: none;
+    }
+
+    .main__container {
+        margin: 20rem 4rem;
+        background-color: var(--color-slate);
+        border-radius: 1.2rem;
+        height: 60rem;
+        position: relative;
+        background-image: url(starter-code/assets/bg-pattern-2.svg);
+        background-repeat: no-repeat;
+    }
+
+    .main__illustration__img-tab {
+        display: block;
+        max-height: 55.6rem;
+        z-index: 2;
+        position: absolute; 
+        top: -12rem;
+        left: 4.8rem;
+    }
+
+    .main__pricing-card {
+        padding: var(--tablet-spacing-sm2);
+        max-width: 35.6rem;
+        max-height: 62.8rem;
+        border-radius: 1.6rem;
+        position: absolute;
+        top: 9rem;
+        right: 6.4rem;
+        z-index: 4;
+    }
+
+    .pricing-card__text {
+        font-size: var(--p-font-size-3);
+    }
+
+    footer {
+        padding-inline: var(--tablet-spacing-sm);
+    }
+
+    .footer__content {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .footer__contact {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+        align-items: center;
+    }
+
+    .footer__copyright {
+        margin-bottom: 0;
+    }
+
+}
+
+@media only screen and (min-width: 70em) /* 1120px */ {
+
+    body {
+        background-image: url(starter-code/assets/bg-main-desktop.png);
+        background-position: 60% 130%;
+    }
+
+    .hero {
+        background-position: 100% -4.4rem;
+        background-size: 31.2rem 46.8rem;
+    }
+
+    .hero__container {
+        max-width: 112rem;
+        margin-inline: auto;
+        padding-inline: 0;
+    }
+
+    .hero__header {
+        font-size: var(--header-1-font-size);
+        max-width: 92.8rem;
+    }
+
+    .hero__text {
+        font-size: var(--p-font-size-1);
+        max-width: 73.6rem;
+    }
+
+    .main__container {
+        max-width: 112rem;
+        margin-inline: auto;
+        background-position: 45.5% 0%;
+    }
+
+    .main__illustration__img-tab {
+        max-height: 64.2rem;
+        left: 10rem;
+    }
+
+    .main__pricing-card {
+        max-width: 51.2rem;
+        padding: 5.6rem;
+    }
+
+    .pricing-card__text {
+        font-size: var(--p-font-size-1);
+    }
+
+    .footer__container {
+        max-width: 112rem;
+        margin-inline: auto;
+    }
+
+    .footer__content {
+        display: flex;
+        flex-direction: row;
+        gap: 25rem;   
+    }
+
+
+    .footer__copyright {
+        margin-left: -12rem;
+    }
+
+}
+
+
+
+
+
