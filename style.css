@@ -176,6 +176,7 @@ button {
     line-height: 1.8;
     font-size: 1.8rem;
     cursor: pointer;
+    transition: all .2s;
 }
 
 .pricing-card__btn-1 {
@@ -183,11 +184,27 @@ button {
     color: var(--color-white);
 }
 
+.pricing-card__btn-1:hover {
+    background-color: var(--color-cyan);
+    color: var(--color-slate);
+    transition: all .2s;
+}
+
+.pricing-card__btn-1:hover img {
+    filter: invert(100%) sepia(100%) saturate(1000%) hue-rotate(180deg) brightness(100%) contrast(100%);
+}
+
 .pricing-card__btn-2 {
     background-color: var(--color-white);
     color: var(--color-slate);
     margin-bottom: 6.4rem;
 }
+
+.pricing-card__btn-2:hover {
+    background-color: var(--color-yellow);
+    color: var(--color-slate);
+}
+
 
 footer {
     padding: 6.4rem 2rem 0 2rem;
