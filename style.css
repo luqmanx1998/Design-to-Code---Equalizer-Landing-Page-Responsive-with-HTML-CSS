@@ -295,6 +295,7 @@ footer {
         top: 9rem;
         right: 6.4rem;
         z-index: 4;
+        color: var(--color-white);
     }
 
     .pricing-card__text {
