@@ -1,11 +1,25 @@
-# Equalizer landing page responsive with HTML/CSS only !
+# Equalizer Landing Page - Responsive with HTML/CSS Only!
 
 ![DESIGN-IMG](preview.jpg)
 
-# Challenges faced :
+## Overview
 
-A small, but really beautiful landing page built with just HTML & CSS ! This landing page looked so good I had to try to code it out :D ! Again, with the figma file it took much less time than it would've without it !
+This small but beautifully designed landing page was a joy to build using just HTML and CSS! The design was so impressive that I couldn't resist coding it out. Thanks to the Figma file, I was able to focus on achieving pixel perfection, and I'm really pleased with the result :D .
 
-I tried my best once again to make it as pixel perfect as possible, and I think I managed to pull it off this time. This really tested my ability with CSS, specifically with `background-position` and dynamic layouts beyond just grid and flexbox ! I had a bit of trouble finding out exactly how to change the layout of the phone illustration (`main__illustration`) and the pricing card from the mobile view, to having them side by side like in the tablet and desktop view. I ended up using hiding the phone illustration container with `display: none` and turning its parent container (`main__container`) into the background, relative to the phone illustration and the pricing card ! Funny enough, maybe I wouldn't have thought about this if it weren't for my previous challenge, the meet landing page , so it all worked out in the end !
+## Challenges Faced
 
-Design provided by Frontend Mentor @(https://www.frontendmentor.io/challenges/equalizer-landing-page-7VJ4gp3DE)
+- **Dynamic Layout Adjustments:** 
+  One of the biggest challenges was transitioning the layout from mobile to desktop views, specifically with the phone illustration (`main__illustration`) and the pricing card. Initially, I struggled to find the right approach, but I eventually used a technique where I hid the phone illustration container with `display: none` and turned its parent container into the background. This solution was inspired by my previous work on the meet landing page.
+
+- **Background Positioning:** 
+  Fine-tuning the `background-position` was key to getting the layout just right. This project pushed my skills in dynamic layouts beyond the basics of grid and flexbox, and I'm happy with the outcome.
+
+## Tools & Techniques
+
+- **HTML5 & CSS3**
+- **Responsive Design:** Leveraging `display`, `position`, and other CSS properties to create a fluid, adaptable layout, beyond just media queries.
+- **Problem-Solving:** Drawing on previous project experience to solve new challenges.
+
+## Design Credit
+
+Design provided by [Frontend Mentor](https://www.frontendmentor.io/challenges/equalizer-landing-page-7VJ4gp3DE).
